@@ -14,6 +14,14 @@
 
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
+import EPAM_SampleFunc  as instEPAM
+ 
+#z= solution(Ap)           
 
-z= solution(Ap)           
+
+make="BMW"
+model="M3"
+color="red"
+my_car = instEPAM.Car(make, model, color)
+print (my_car.model)
 

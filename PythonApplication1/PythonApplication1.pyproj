@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd7d65df-b179-4c85-a759-21c5ed29d0da</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>EPAM_SampleTest.py</StartupFile>
+    <StartupFile>FilesSample.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonApplication1</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,8 +22,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="analysedText.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="EPAM_SampleFunc.py" />
     <Compile Include="EPAM_SampleTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilesSample.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestAnalyseText.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Strings.py">
